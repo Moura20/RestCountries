@@ -1,0 +1,157 @@
+
+
+.country-page {
+    padding: 20px;
+}
+
+.filters-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.filters-container select,
+.filters-container input {
+    margin-bottom: 10px; 
+}
+
+
+@media (min-width: 768px) {
+    .filters-container {
+        flex-direction: row; 
+        align-items: center; 
+    }
+    
+    .filters-container select,
+    .filters-container input {
+        margin-right: 10px; 
+    }
+}
+
+
+
+
+.country-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    padding: 20px;
+}
+
+.country-item {
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    width: 300px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    transition: transform 0.3s; 
+    background-color: white; 
+}
+
+.country-item:hover {
+    transform: scale(1.05); 
+}
+
+.country-item img {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.country-item h2 {
+    font-size: 1.5rem; 
+    margin: 15px 0; 
+}
+
+.country-item p {
+    margin: 5px 0; 
+}
+
+
+.link {
+    text-decoration: none; 
+    color: #007bff; 
+    margin-top: 20px; 
+    display: inline-block; 
+}
+
+.link:hover {
+    text-decoration: underline; 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+.country-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.country-card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.country-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.country-card .details {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+
+
+@media (max-width: 600px) {
+    .country-item {
+        width: 90%; 
+    }
+
+    .filters-container {
+        flex-direction: column; 
+    }
+
+    .filters-container select,
+    .filters-container input {
+        width: 100%; 
+    }
+}
+
+@media (min-width: 601px) {
+    .country-list {
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    }
+
+    .country-item {
+        width: auto; 
+    }
+}
+
+
